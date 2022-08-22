@@ -5,7 +5,7 @@
 // Describe the code as it would be run, and make sure you give us the console.log's value at the end.
 // (Don't just say 'we console log the variable' -- instead say something like 'we console log 'yes'')
 
-sdf
+
 // 0. WRITE YOUR DESCRIPTION HERE
 // //EXAMPLE. We make a variable called number and set it to 1 as a number.
 // Then we increment the number variable. Number is now 2.
@@ -26,10 +26,14 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First, create a "let" variable (name) with the literal string value of "Dane";
+// Create an "if" statement comparing the variable "name" with the string literal "Mary";
+// The comparison is looking for equal value as well as type, since it is three equal signs
+//...rather than two. 
+// If true, console.log will return "Hi, Mary!", otherwise it will return "How do you do?";
+// If using "==" rather than "===", the result will be the same as the comparison is between
+//...two literal strings which require quotations on either side to label it as such.
+// It would be different if the value was an appropriate variable, or a number. 
 
 //CODE
 /*
@@ -45,10 +49,16 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Create variable "let" with the name "secret". It's value is currently undefined. 
+// Create variable "let" with the name code, with a Number value of 123. 
+// Create "if" statement to compare the code, which has a Number value of 123, and find out
+//...if it is equal (in value and type) to the number 123. If it is equal, apply a value to 
+// the undefined variable "secret" with a string literal called "super". Additionally,
+//take the current value of variable "code" and multiply it by 2 (totals 246).
+//If the value of the variable code is greater than 250 (it isn't), then change the value of secret
+// to "duper". 
+// Then, console.log the variable "secret". It will be either "super" or "duper", depending on the result. 
+// In this case, It will just be "super" because the value of variable code is NOT greater than 250. 
 
 //CODE
 /*
@@ -70,9 +80,18 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// Create three variables using "let". isStudent has a boolean value of true.
+//  age has a Number value of 34. And variable zip has a Numerical value of 55407.
+// Create a comparative "if" statement. These comparisons use "===" rather than "==", so it's
+//...comparing value AND type. 
+// The first comparison is asking if isStudent, as a boolean, is true. In order for this full comparison
+//..to be true, the variable zip (55407) additionally needs to be greater than 80000, which is not true in
+//..this case. Thus, we move on to the next "else if" statement until we find one that is true. 
+// The next one says if isStudent (as a boolean) is false OR age (34) is less than 30, then
+//..to return "What are your hobbies?" using console.log. This will also not return this statement as
+//..both of the comparisons are not true. The next comparison in the "if" statement is soley asking if
+//.. isStudent is true. It is true. Thus, console.log("Welcome to Prime!") will be diplayed. If none of
+//..These conditions were true, the console would display "How about the weather?". 
 //
 
 //CODE
@@ -130,10 +149,13 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+//FIX: colorOne is set to 'red', but it should be set to 'blue'; colorTwo should be set to 'red';
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+//FIX: The instrucitons say that colorOne AND colorTwo are set to purple, only colorOne is. 
+//FIX: Set colorTwo to equal 'purple' as well. 
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -146,7 +168,8 @@ if (mix === true) {
 /*
 let temp = 40;
 const time = 4;
-
+//FIX: The instructions are comparing whether temp is greather than 39 AND (&&) if time is >= 4.
+//FIX: The operator used is an "OR" operator, not an "AND" one, so switch "||" out for "&&"". 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -159,6 +182,13 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+//FIX: The comparison operator is incorrect, currently it reads as "less than or equal to".
+//FIX: It should be "greater than or equal to," or " >= ". Additionally, the direction reads as comparing
+//FIX:...variable "age" TO variable "minAge", so we should switch their placement to look like 
+//FIX:.. " (age >= minAge) ". The result is the same only because their current values are equal. 
+//FIX: Also, the console.logs are in the opposite spots. Right now, console.log will return "no entry",
+//FIX:..So, the first console.log entry should have the string value of "enter", and the second entry
+//FIX:..(Which returns if the comparison is false), should have the console.log value of "no entry". 
 
 if(minAge <= age) {
   console.log('no entry');
